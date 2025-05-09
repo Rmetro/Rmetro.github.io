@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("gta5-background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    main {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    header, footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Game Reviews</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top-games.html">Top Games</a></li>
+        <li><a href="game-details.html">Game Details</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="impact.html">Impact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Leave a Review</h2>
+    <form id="review-form">
+      <label>Rating:
+        <input type="radio" name="rating" value="1">1
+        <input type="radio" name="rating" value="2">2
+        <input type="radio" name="rating" value="3">3
+        <input type="radio" name="rating" value="4">4
+        <input type="radio" name="rating" value="5">5
+      </label>
+      <br><br>
+      <label>Comment:<br>
+        <textarea id="comment" rows="4" cols="50"></textarea>
+      </label>
+      <br><br>
+      <button type="button" onclick="submitReview()">Submit</button>
+    </form>
+
+    <h2>All Reviews</h2>
+    <ul id="review-list"></ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Legends of Gaming</p>
+  </footer>
+</body>
+</html>

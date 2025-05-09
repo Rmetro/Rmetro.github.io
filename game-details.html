@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("residentevil-background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #00ffcc;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .game-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .game-card h2 {
+      color: #00ffcc;
+    }
+    .game-card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .game-info {
+      margin-top: 15px;
+      font-size: 1.05em;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Game Details</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="top-games.html">Top Games</a></li>
+          <li><a href="game-details.html">Game Details</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="impact.html">Impact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="game-grid">
+        <div class="game-card">
+          <h2>EA Sports FC 25</h2>
+          <img src="fc-25-cover.avif" alt="FC 25">
+          <div class="game-info">
+            <p>EA Sports FC 25 is the latest installment in the football simulation franchise. Featuring hyper-realistic graphics, improved AI, and career modes, it's set to redefine sports gaming once again. Includes licensed leagues, dynamic match-day experiences, and cross-play functionality.</p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h2>Call of Duty</h2>
+          <img src="OIP.jpeg" alt="Call of Duty">
+          <div class="game-info">
+            <p>Call of Duty continues to push the boundaries of first-person shooter gameplay. With a gripping storyline, multiplayer arenas, and Warzone mode, the game remains a favorite among action enthusiasts worldwide.</p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h2>Minecraft</h2>
+          <img src="OIP (1).jpeg" alt="Minecraft">
+          <div class="game-info">
+            <p>Minecraft allows players to explore, build, and survive in a blocky, procedurally-generated 3D world. Known for its creativity and endless possibilities, it's perfect for all age groups.</p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h2>Fortnite</h2>
+          <img src="OIP (2).jpeg" alt="Fortnite">
+          <div class="game-info">
+            <p>Fortnite’s battle royale mode revolutionized online gaming with its fast-paced gameplay and unique building mechanics. Join millions worldwide in this colorful and competitive arena.</p>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <h2>GTA V</h2>
+          <img src="OIP (3).jpeg" alt="GTA V">
+          <div class="game-info">
+            <p>Grand Theft Auto V combines narrative brilliance with a massive open world and online features. Experience Los Santos through high-speed chases, heists, and a rich storyline.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Legends of Gaming</p>
+    </footer>
+  </div>
+</body>
+</html>
